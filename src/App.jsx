@@ -3,13 +3,13 @@ import search from "./assets/LightGray.png"
 import { Routes,Route } from 'react-router-dom'
 import Login from './Pages/Login'
 import HomePage from './Pages/HomePage'
-import Signup from './Pages/Signup'
+import Signup from './Pages/Signup' 
 
 function App() {
   const [isLoading , setLoading]=useState(false)
   const [atLoginPage,setLoginPage]=useState(false)
   return (
-    <>
+    <>  
     <div>
     {
       !atLoginPage&&
@@ -20,7 +20,7 @@ function App() {
             <input className='rounded-full p-1.5 pl-7 border-2 border-black custom-width-300' type='text' placeholder='Search Opportunities'></input>
           <button><img src={search} className='h-5 absolute left-2 top-2.5' ></img></button>
           </form>
-          
+          {/* <p>hello</p> */}
           <li className='flex gap-8 justify-center items-center text-lg'>
             <ul>Discover</ul>
             <ul>Hackathons</ul>
